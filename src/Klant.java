@@ -48,3 +48,4 @@ public class Klant {
         return rekeningnummer;
     }
 }
+
