@@ -8,6 +8,8 @@ public class Klant {
     private String adres;
     private String rekeningnummer;
 
+    private DBConnection db;
+
     public Klant(String voornaam, String achternaam, String email, String telefoonnummer, String adres, String rekeningnummer){
         this.voornaam = voornaam;
         this.achternaam = achternaam;
@@ -15,36 +17,33 @@ public class Klant {
         this.telefoonnummer = telefoonnummer;
         this.adres = adres;
         this.rekeningnummer = rekeningnummer;
+        this.db = new DBConnection();
     }
 
     public Klant(int klantID) {
     }
 
-    public String zoekBestaandeKlant(int klantID) {
-
-    }
-
-    public getVoornaam() {
+    public String getVoornaam() {
         return voornaam;
     }
 
-    public getAchternaam() {
+    public String getAchternaam() {
         return achternaam;
     }
 
-    public getEmail() {
+    public String getEmail() {
         return email;
     }
 
-    public getTelefoonnummer() {
+    public String getTelefoonnummer() {
         return telefoonnummer;
     }
 
-    public getAdres() {
+    public String getAdres() {
         return adres;
     }
 
-    public getRekeningnummer() {
+    public String getRekeningnummer() {
         return rekeningnummer;
     }
 }

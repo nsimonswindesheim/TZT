@@ -17,14 +17,6 @@ public class Verzending {
 
     }
 
-    public String zoekBestaandeVerzending(int verzendID) {
-
-    }
-
-    public Klant getKlant() {
-        return klant;
-    }
-
     public Route getRoute() {
         return route;
     }
