@@ -11,11 +11,12 @@ public class DBConnection {
 
     public DBConnection() {
         try {
+            Class.forName(DRIVER).newInstance();
             this.conn = DriverManager.getConnection(JDBC_URL);
             if(this.conn != null) {
                 System.out.println("Connected to database");
             }
-        } catch (SQLException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
