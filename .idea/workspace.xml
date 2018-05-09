@@ -2,101 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2bc8fda2-466e-4052-941d-f90d7b0e064c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f534040c-2fa9-464f-b3c0-fc5f8c34ba7b.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/f534040c-2fa9-464f-b3c0-fc5f8c34ba7b.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/README_DO_NOT_TOUCH_FILES.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/db.lck" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/dbex.lck" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/README_DO_NOT_TOUCH_FILES.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c10.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c101.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c111.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c121.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c130.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c141.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c150.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c161.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c171.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c180.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c191.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c1a1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c1b1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c1c0.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c1d1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c1e0.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c1f1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c20.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c200.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c211.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c221.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c230.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c241.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c251.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c260.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c271.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c281.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c290.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c2a1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c2b1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c2c1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c2d0.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c2e1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c2f0.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c300.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c31.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c311.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c321.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c331.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c340.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c351.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c361.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c371.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c380.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c391.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c3a1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c3b1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c3c0.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c3d1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c3e1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c3f1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c400.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c41.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c411.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c421.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c430.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c441.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c451.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c461.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c470.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c481.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c4c0.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c4d1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c51.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c60.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c71.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c81.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c90.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/ca1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/cb1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/cc0.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/cd1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/ce1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/cf0.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/d4a0.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/d4b1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/service.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/derby.log" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/TZT/DBConnection.class" afterPath="$PROJECT_DIR$/out/production/TZT/DBConnection.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/TZT/Klant.class" afterPath="$PROJECT_DIR$/out/production/TZT/Klant.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/TZT/Main.class" afterPath="$PROJECT_DIR$/out/production/TZT/Main.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/TZT/Verzending.class" afterPath="$PROJECT_DIR$/out/production/TZT/Verzending.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/TZT/lib/derby.jar" afterPath="$PROJECT_DIR$/out/production/TZT/lib/derby.jar" />
-      <change beforePath="$PROJECT_DIR$/src/DBConnection.java" afterPath="$PROJECT_DIR$/src/DBConnection.java" />
-      <change beforePath="$PROJECT_DIR$/src/Klant.java" afterPath="$PROJECT_DIR$/src/Klant.java" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
-      <change beforePath="$PROJECT_DIR$/src/lib/derby.jar" afterPath="$PROJECT_DIR$/src/lib/derby.jar" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/db.lck" afterPath="$PROJECT_DIR$/DBTZT/db.lck" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/log/log.ctrl" afterPath="$PROJECT_DIR$/DBTZT/log/log.ctrl" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/log/log1.dat" afterPath="$PROJECT_DIR$/DBTZT/log/log1.dat" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/log/logmirror.ctrl" afterPath="$PROJECT_DIR$/DBTZT/log/logmirror.ctrl" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c150.dat" afterPath="$PROJECT_DIR$/DBTZT/seg0/c150.dat" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c161.dat" afterPath="$PROJECT_DIR$/DBTZT/seg0/c161.dat" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c171.dat" afterPath="$PROJECT_DIR$/DBTZT/seg0/c171.dat" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c20.dat" afterPath="$PROJECT_DIR$/DBTZT/seg0/c20.dat" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c230.dat" afterPath="$PROJECT_DIR$/DBTZT/seg0/c230.dat" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c31.dat" afterPath="$PROJECT_DIR$/DBTZT/seg0/c31.dat" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c51.dat" afterPath="$PROJECT_DIR$/DBTZT/seg0/c51.dat" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c60.dat" afterPath="$PROJECT_DIR$/DBTZT/seg0/c60.dat" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c90.dat" afterPath="$PROJECT_DIR$/DBTZT/seg0/c90.dat" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/ca1.dat" afterPath="$PROJECT_DIR$/DBTZT/seg0/ca1.dat" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/cb1.dat" afterPath="$PROJECT_DIR$/DBTZT/seg0/cb1.dat" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -125,6 +47,12 @@
         <item name="DBTZT" type="feb32156:DbDataSourceImpl" />
         <item name="APP: schema" type="6aa84934:DerbyImplModel$Schema" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="DBTZT" type="feb32156:DbDataSourceImpl" />
+        <item name="APP: schema" type="6aa84934:DerbyImplModel$Schema" />
+        <item name="KLANT: table" type="3b012a07:DerbyImplModel$Table" />
+      </path>
     </expand>
     <select />
   </component>
@@ -143,7 +71,7 @@
       <file leaf-file-name="DBConnection.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DBConnection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
+            <state relative-caret-position="368">
               <caret line="29" column="34" lean-forward="false" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
               <folding />
             </state>
@@ -153,8 +81,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="2" lean-forward="false" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
+            <state relative-caret-position="225">
+              <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -191,6 +119,7 @@
         <option value="$PROJECT_DIR$/src/Klant.java" />
         <option value="$PROJECT_DIR$/src/DBConnection.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/f534040c-2fa9-464f-b3c0-fc5f8c34ba7b/console.sql" />
       </list>
     </option>
   </component>
@@ -388,7 +317,7 @@
       <updated>1525164291161</updated>
       <workItem from="1525164294245" duration="15972000" />
       <workItem from="1525787078116" duration="228000" />
-      <workItem from="1525801546422" duration="5238000" />
+      <workItem from="1525801546422" duration="5646000" />
     </task>
     <task id="LOCAL-00001" summary="Some classes">
       <created>1525688184540</created>
@@ -401,7 +330,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21438000" />
+    <option name="totallyTimeSpent" value="21846000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -419,6 +348,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958034" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32958034" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16117217" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23076923" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -426,7 +356,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37871033" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37871033" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -435,7 +365,6 @@
       <window_info id="SQL Generator" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958034" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958034" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -640,17 +569,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://table:/1792995d/f534040c-2fa9-464f-b3c0-fc5f8c34ba7b/APP.KLANT">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f534040c-2fa9-464f-b3c0-fc5f8c34ba7b/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="210">
+          <caret line="14" column="1" lean-forward="false" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DBConnection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
+        <state relative-caret-position="368">
           <caret line="29" column="34" lean-forward="false" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
           <folding />
         </state>
@@ -658,8 +594,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="2" lean-forward="false" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
+        <state relative-caret-position="225">
+          <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
           <folding />
         </state>
       </provider>
