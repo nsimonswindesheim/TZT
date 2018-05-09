@@ -1,7 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2bc8fda2-466e-4052-941d-f90d7b0e064c" name="Default" comment="" />
+    <list default="true" id="2bc8fda2-466e-4052-941d-f90d7b0e064c" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/README_DO_NOT_TOUCH_FILES.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/db.lck" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/dbex.lck" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/README_DO_NOT_TOUCH_FILES.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c10.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c101.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c111.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c121.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c130.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c141.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c150.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c161.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c171.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c180.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c191.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c1a1.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c1b1.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c1c0.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c1d1.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c1e0.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c1f1.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c20.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c200.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c211.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c221.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c230.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c241.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c251.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c260.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c271.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c281.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c290.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c2a1.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c2b1.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c2c1.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c2d0.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c2e1.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c2f0.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c300.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c31.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c311.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c321.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c331.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c340.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c351.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c361.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c371.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c380.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c391.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c3a1.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c3b1.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c3c0.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c3d1.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c3e1.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c3f1.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c400.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c41.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c411.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c421.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c430.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c441.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c451.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c461.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c470.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c481.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c4c0.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c4d1.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c51.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c60.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c71.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c81.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c90.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/ca1.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/cb1.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/cc0.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/cd1.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/ce1.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/cf0.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/d4a0.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/d4b1.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DBTZT/service.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/derby.log" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/TZT/DBConnection.class" afterPath="$PROJECT_DIR$/out/production/TZT/DBConnection.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/TZT/Klant.class" afterPath="$PROJECT_DIR$/out/production/TZT/Klant.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/TZT/Main.class" afterPath="$PROJECT_DIR$/out/production/TZT/Main.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/TZT/Verzending.class" afterPath="$PROJECT_DIR$/out/production/TZT/Verzending.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/TZT/lib/derby.jar" afterPath="$PROJECT_DIR$/out/production/TZT/lib/derby.jar" />
+      <change beforePath="$PROJECT_DIR$/src/DBConnection.java" afterPath="$PROJECT_DIR$/src/DBConnection.java" />
+      <change beforePath="$PROJECT_DIR$/src/Klant.java" afterPath="$PROJECT_DIR$/src/Klant.java" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
+      <change beforePath="$PROJECT_DIR$/src/lib/derby.jar" afterPath="$PROJECT_DIR$/src/lib/derby.jar" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,12 +125,6 @@
         <item name="DBTZT" type="feb32156:DbDataSourceImpl" />
         <item name="APP: schema" type="6aa84934:DerbyImplModel$Schema" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="DBTZT" type="feb32156:DbDataSourceImpl" />
-        <item name="APP: schema" type="6aa84934:DerbyImplModel$Schema" />
-        <item name="KLANT: table" type="3b012a07:DerbyImplModel$Table" />
-      </path>
     </expand>
     <select />
   </component>
@@ -43,21 +133,29 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="45" lean-forward="false" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
+            <state relative-caret-position="135">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DBConnection.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DBConnection.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DBConnection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="320">
+              <caret line="29" column="34" lean-forward="false" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="2" lean-forward="false" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -92,6 +190,7 @@
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Klant.java" />
         <option value="$PROJECT_DIR$/src/DBConnection.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -102,8 +201,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1680" />
-    <option name="height" value="1050" />
+    <option name="x" value="840" />
+    <option name="y" value="23" />
+    <option name="width" value="840" />
+    <option name="height" value="1027" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -120,7 +221,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -138,8 +240,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -148,9 +249,15 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Derby (Embedded)" />
     <property name="settings.editor.selected.configurable" value="copyright" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -280,7 +387,8 @@
       <option name="presentableId" value="Default" />
       <updated>1525164291161</updated>
       <workItem from="1525164294245" duration="15972000" />
-      <workItem from="1525787078116" duration="70000" />
+      <workItem from="1525787078116" duration="228000" />
+      <workItem from="1525801546422" duration="5238000" />
     </task>
     <task id="LOCAL-00001" summary="Some classes">
       <created>1525688184540</created>
@@ -293,7 +401,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16042000" />
+    <option name="totallyTimeSpent" value="21438000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -301,30 +409,30 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939914" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958034" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958034" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15934066" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16117217" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23076923" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4094166" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37871033" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
       <window_info id="SQL Generator" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958034" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958034" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958034" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -358,11 +466,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DBConnection.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="23" column="33" lean-forward="true" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="45" lean-forward="false" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DBConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="24" column="52" lean-forward="true" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -456,32 +578,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://src:table:/1792995d/0435d3f0-ffe5-4e72-86cc-d3f2d991c2aa/APP.KLANT">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="13" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/1792995d/0435d3f0-ffe5-4e72-86cc-d3f2d991c2aa/APP.KLANT">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0435d3f0-ffe5-4e72-86cc-d3f2d991c2aa/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="1" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="45" lean-forward="false" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
           <folding />
         </state>
       </provider>
@@ -494,21 +594,73 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://table:/1792995d/0435d3f0-ffe5-4e72-86cc-d3f2d991c2aa/APP.KLANT">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://src:table:/1792995d/0435d3f0-ffe5-4e72-86cc-d3f2d991c2aa/APP.KLANT">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Klant.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="269">
+          <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+          <folding>
+            <element signature="e#756#757#0" expanded="false" />
+            <element signature="e#787#788#0" expanded="false" />
+            <element signature="e#824#825#0" expanded="false" />
+            <element signature="e#857#858#0" expanded="false" />
+            <element signature="e#889#890#0" expanded="false" />
+            <element signature="e#917#918#0" expanded="false" />
+            <element signature="e#958#959#0" expanded="false" />
+            <element signature="e#995#996#0" expanded="false" />
+            <element signature="e#1027#1028#0" expanded="false" />
+            <element signature="e#1055#1056#0" expanded="false" />
+            <element signature="e#1096#1097#0" expanded="false" />
+            <element signature="e#1133#1134#0" expanded="false" />
+            <marker date="1525854000939" expanded="true" signature="1255:1381" ph="INSERT INTO KLANT... " />
+            <marker date="1525854000939" expanded="true" signature="1255:1402" ph="INSERT INTO KLANT... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f534040c-2fa9-464f-b3c0-fc5f8c34ba7b/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DBConnection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="320">
+          <caret line="29" column="34" lean-forward="false" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="2" lean-forward="false" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
+          <folding />
         </state>
       </provider>
     </entry>

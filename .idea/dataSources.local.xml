@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="DBTZT" uuid="0435d3f0-ffe5-4e72-86cc-d3f2d991c2aa">
+    <data-source name="DBTZT" uuid="f534040c-2fa9-464f-b3c0-fc5f8c34ba7b">
       <database-info product="Apache Derby" version="10.14.1.0 - (1808820)" jdbc-version="4.2" driver-name="Apache Derby Embedded JDBC Driver" driver-version="10.14.1.0 - (1808820)">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>

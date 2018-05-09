@@ -1,6 +1,6 @@
 ----------------------------------------------------------------
-Tue May 08 14:10:46 CEST 2018:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-0163-3fa9-3d47-00000f1849b0 
+Wed May 09 11:04:31 CEST 2018:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0163-4425-1626-00000f2831b8 
 on database directory /Users/nicksimons/Documents/TZT/TZT/DBTZT with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@4f8e5cde 
 Loaded from file:/Users/nicksimons/Documents/TZT/TZT/src/lib/derby.jar
 java.vendor=Oracle Corporation

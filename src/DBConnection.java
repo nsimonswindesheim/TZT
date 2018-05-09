@@ -1,19 +1,19 @@
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+import java.sql.*;
 
 public class DBConnection {
 
     private static final String DRIVER      = "org.apache.derby.jdbc.EmbeddedDriver";
     private static final String JDBC_URL    = "jdbc:derby:DBTZT;create=true";
 
-    public Connection conn;
+    public Connection connect = null;
+    public Statement statement = null;
+    public ResultSet resultSet = null;
 
-    public DBConnection() {
+    public void open() {
         try {
-            Class.forName(DRIVER).newInstance();
-            this.conn = DriverManager.getConnection(JDBC_URL);
-            if(this.conn != null) {
+            Class.forName(DRIVER);
+            connect = DriverManager.getConnection(JDBC_URL);
+            if(this.connect != null) {
                 System.out.println("Connected to database");
             }
         } catch (Exception e) {
@@ -21,10 +21,18 @@ public class DBConnection {
         }
     }
 
-    public void query(String q) {
+    public void close() {
         try {
-            this.conn.createStatement().execute("");
-        } catch (SQLException e) {
+            if (resultSet != null) {
+                resultSet.close();
+            }
+            if (statement != null) {
+                statement.close();
+            }
+            if (connect != null) {
+                connect.close();
+            }
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }

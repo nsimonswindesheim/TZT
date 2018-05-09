@@ -1,3 +1,5 @@
+import java.sql.SQLException;
+
 public class Klant {
 
     private int klantID;
@@ -17,6 +19,7 @@ public class Klant {
         this.telefoonnummer = telefoonnummer;
         this.adres = adres;
         this.rekeningnummer = rekeningnummer;
+
         this.db = new DBConnection();
     }
 
@@ -45,6 +48,18 @@ public class Klant {
 
     public String getRekeningnummer() {
         return rekeningnummer;
+    }
+
+    private void saveToDB() {
+        this.db.open();
+
+        try {
+            db.connect.createStatement().execute("INSERT INTO KLANT (VOORNAAM, ACHTERNAAM, EMAIL, TELEFOONNUMMER, STRAAT, HUISNUMMER, POSTCODE, PLAATS, AANMAAK_DATUM) VALUES ('"+this.voornaam+"', )");
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        this.db.close();
     }
 }
 

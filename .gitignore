@@ -1,7 +1,7 @@
 # Eclipse
-.classpath
-.project
-.settings/
+# .classpath
+# .project
+# .settings/
  
 # Intellij
 # .idea/
@@ -9,9 +9,9 @@
 # *.iws
  
 # Mac
-.DS_Store
+# .DS_Store
  
 # Maven
-log/
-target/
-.idea/workspace.xml
+# log/
+# target/
+# .idea/workspace.xml
