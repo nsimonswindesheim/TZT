@@ -31,4 +31,8 @@ public class Verzending {
 
         this.route = RouteCalculator.berekenRoute(origin, destination);
     }
+
+    public Route getRoute() {
+        return route;
+    }
 }

@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 public class HttpRequest {
 
-    public static String getGoogleMatrix(String[] origins, ArrayList<String> destinations, int mode) {
+    public static String getGoogleMatrix(ArrayList<Locatie> origins, ArrayList<Locatie> destinations, int mode) {
         String modeText = "driving";
         if(mode == 2) {
             modeText = "bicycling";
@@ -19,11 +19,30 @@ public class HttpRequest {
             modeText = "transit";
         }
 
-        String originString         = String.join("|", origins).replaceAll(" ", "+");
-        String destinationString    = String.join("|", destinations).replaceAll(" ", "+");
+        String originString = "";
+        String destinationString = "";
+
+        for(Locatie loc:origins) {
+            originString += loc.getFullAddress()+"|";
+        }
+        for(Locatie loc:destinations) {
+            destinationString += loc.getFullAddress()+"|";
+        }
+
+
+        originString         = originString.replaceAll(" ", "+");
+        destinationString    = destinationString.replaceAll(" ", "+");
         String url = "https://maps.googleapis.com/maps/api/distancematrix/json?origins="+ originString +"&destinations="+ destinationString +"&mode="+ modeText +"&language="+ Config.REQ_LANG +"&key="+Config.APIKEY;
 
         return googleRequest(url);
+    }
+
+    public static String getGoogleMatrix(Locatie origins, Locatie destinations, int mode) {
+        ArrayList<Locatie> originArray = new ArrayList<>();
+        ArrayList<Locatie> destinationArray = new ArrayList<>();
+        originArray.add(origins);
+        destinationArray.add(destinations);
+        return getGoogleMatrix(originArray, destinationArray, mode);
     }
 
     private static String googleRequest(String url) {

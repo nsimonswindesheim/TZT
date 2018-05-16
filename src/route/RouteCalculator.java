@@ -3,6 +3,10 @@ package route;
 import general.DBConnection;
 import general.HttpRequest;
 import general.Locatie;
+import koerier.BodeKoerier;
+import koerier.FietsKoerier;
+import koerier.PietersenTransport;
+import koerier.TreinKoerier;
 import org.json.JSONArray;
 import org.json.JSONException;
 
@@ -13,29 +17,106 @@ public class RouteCalculator {
 
     public static Route berekenRoute(Locatie origin, Locatie destination) {
         ArrayList<Route> mogelijkheden = new ArrayList<>();
+        Route tijdelijkeRoute;
         if(fietsMogelijk(origin.getPlaats(), destination.getPlaats())) {
             //route.RouteCalculator met fiets naar eind
-            System.out.println("ja");
-        } else {
-            System.out.println("nee");
+            String fullFietsRes = HttpRequest.getGoogleMatrix(origin, destination, 2);
+            tijdelijkeRoute = new Route();
+            tijdelijkeRoute.addStep(new FietsKoerier(), fullFietsRes);
+            mogelijkheden.add(tijdelijkeRoute);
         }
 
-        ArrayList<String> stations = berekenStation(origin, destination);
+        ArrayList<Locatie> stations = berekenStation(origin, destination);
         if(!stations.isEmpty()) {
-            System.out.println("Begin station: "+stations.get(0));
-            System.out.println("Eind station: "+stations.get(1));
-        } else {
-            System.out.println("Geen station");
-        }
-        //route.RouteCalculator naar station
-        //Trein route
-        //route.RouteCalculator van station naar eind
+            Locatie station1 = stations.get(0);
+            Locatie station2 = stations.get(1);
+            System.out.println("Begin station: " + station2.getFullAddress());
+            System.out.println("Eind station: " + station1.getFullAddress());
 
+            String deel1Auto    = HttpRequest.getGoogleMatrix(origin, station1, 1);
+            String deel1Fiets   = HttpRequest.getGoogleMatrix(origin, station1, 2);
+            String deel2        = HttpRequest.getGoogleMatrix(station1, station2, 3);
+            String deel3Auto    = HttpRequest.getGoogleMatrix(station2, destination, 1);
+            String deel3Fiets   = HttpRequest.getGoogleMatrix(station2, destination, 2);
+            boolean deel1FietMogelijk = fietsMogelijk(origin.getPlaats(), station1.getPlaats());
+            boolean deel3FietMogelijk = fietsMogelijk(station2.getPlaats(), destination.getPlaats());
+
+            //Fiets Trein Fiets
+            if(deel1FietMogelijk && deel3FietMogelijk) {
+                tijdelijkeRoute = new Route();
+                tijdelijkeRoute.addStep(new FietsKoerier(), deel1Fiets);
+                tijdelijkeRoute.addStep(new TreinKoerier(), deel2);
+                tijdelijkeRoute.addStep(new FietsKoerier(), deel3Fiets);
+                mogelijkheden.add(tijdelijkeRoute);
+            }
+
+            //Fiets Trein Auto
+            if(deel1FietMogelijk) {
+                tijdelijkeRoute = new Route();
+                tijdelijkeRoute.addStep(new FietsKoerier(), deel1Fiets);
+                tijdelijkeRoute.addStep(new TreinKoerier(), deel2);
+                tijdelijkeRoute.addStep(new BodeKoerier(), deel3Auto);
+                mogelijkheden.add(tijdelijkeRoute);
+                tijdelijkeRoute = new Route();
+                tijdelijkeRoute.addStep(new FietsKoerier(), deel1Fiets);
+                tijdelijkeRoute.addStep(new TreinKoerier(), deel2);
+                tijdelijkeRoute.addStep(new PietersenTransport(), deel3Auto);
+                mogelijkheden.add(tijdelijkeRoute);
+            }
+
+            //Auto Trein Auto
+            tijdelijkeRoute = new Route();
+            tijdelijkeRoute.addStep(new BodeKoerier(), deel1Auto);
+            tijdelijkeRoute.addStep(new TreinKoerier(), deel2);
+            tijdelijkeRoute.addStep(new BodeKoerier(), deel3Auto);
+            mogelijkheden.add(tijdelijkeRoute);
+            tijdelijkeRoute = new Route();
+            tijdelijkeRoute.addStep(new BodeKoerier(), deel1Auto);
+            tijdelijkeRoute.addStep(new TreinKoerier(), deel2);
+            tijdelijkeRoute.addStep(new PietersenTransport(), deel3Auto);
+            mogelijkheden.add(tijdelijkeRoute);
+            tijdelijkeRoute = new Route();
+            tijdelijkeRoute.addStep(new PietersenTransport(), deel1Auto);
+            tijdelijkeRoute.addStep(new TreinKoerier(), deel2);
+            tijdelijkeRoute.addStep(new PietersenTransport(), deel3Auto);
+            mogelijkheden.add(tijdelijkeRoute);
+            tijdelijkeRoute = new Route();
+            tijdelijkeRoute.addStep(new PietersenTransport(), deel1Auto);
+            tijdelijkeRoute.addStep(new TreinKoerier(), deel2);
+            tijdelijkeRoute.addStep(new BodeKoerier(), deel3Auto);
+            mogelijkheden.add(tijdelijkeRoute);
+
+            //Auto Trein Fiets
+            if(deel3FietMogelijk) {
+                tijdelijkeRoute = new Route();
+                tijdelijkeRoute.addStep(new BodeKoerier(), deel1Auto);
+                tijdelijkeRoute.addStep(new TreinKoerier(), deel2);
+                tijdelijkeRoute.addStep(new FietsKoerier(), deel3Fiets);
+                mogelijkheden.add(tijdelijkeRoute);
+                tijdelijkeRoute = new Route();
+                tijdelijkeRoute.addStep(new PietersenTransport(), deel1Auto);
+                tijdelijkeRoute.addStep(new TreinKoerier(), deel2);
+                tijdelijkeRoute.addStep(new FietsKoerier(), deel3Fiets);
+                mogelijkheden.add(tijdelijkeRoute);
+            }
+        }
 
         //route.RouteCalculator met auto
+        String fullCarRes = HttpRequest.getGoogleMatrix(origin, destination, 1);
+        tijdelijkeRoute = new Route();
+        tijdelijkeRoute.addStep(new BodeKoerier(), fullCarRes);
+        mogelijkheden.add(tijdelijkeRoute);
+        tijdelijkeRoute = new Route();
+        tijdelijkeRoute.addStep(new PietersenTransport(), fullCarRes);
+        mogelijkheden.add(tijdelijkeRoute);
 
+        Collections.sort(mogelijkheden);
 
-        return new Route();
+        if(!mogelijkheden.isEmpty()) {
+            return mogelijkheden.get(0);
+        } else {
+            return null;
+        }
     }
 
     private static boolean fietsMogelijk(String pl1, String pl2) {
@@ -62,105 +143,30 @@ public class RouteCalculator {
         }
     }
 
-    private static ArrayList<String> berekenStation(Locatie origin, Locatie destination) {//Station mogelijkheden
-        ArrayList<String> stationPlaatsen = new ArrayList<>();
-        ArrayList<String> stationPlaatsBeginEind = new ArrayList<>();
+    private static ArrayList<Locatie> berekenStation(Locatie origin, Locatie destination) {//Station mogelijkheden
+        ArrayList<Locatie> stationPlaatsen = new ArrayList<>();
         try {
             DBConnection db = new DBConnection();
             db.open();
-            db.statement = db.connect.prepareStatement("SELECT * FROM FIETSPLAATS");
+            db.statement = db.connect.prepareStatement("SELECT * FROM STATIONPLAATS");
             db.resultSet = db.statement.executeQuery();
             while(db.resultSet.next()) {
-                stationPlaatsen.add(db.resultSet.getString(1));
+                stationPlaatsen.add(new Locatie(db.resultSet.getString(2), db.resultSet.getString(3), db.resultSet.getString(4), db.resultSet.getString(5), db.resultSet.getInt(1)));
             }
             db.close();
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        System.out.println(stationPlaatsen);
-        String res = HttpRequest.getGoogleMatrix(new String[]{"Entoshof 23", "1781 SW, Den Helder"}, stationPlaatsen, 1);
-//        String res = "{" +
-//                "   \"destination_addresses\" : [ \"Amsterdam, Nederland\", \"Rotterdam, Nederland\", \"Enschede, Nederland\" ]," +
-//                "   \"origin_addresses\" : [ \"Entoshof 23, 7462 VV Rijssen, Nederland\", \"Dordrecht, Nederland\" ]," +
-//                "   \"rows\" : [" +
-//                "      {" +
-//                "         \"elements\" : [" +
-//                "            {" +
-//                "               \"distance\" : {" +
-//                "                  \"text\" : \"134 km\"," +
-//                "                  \"value\" : 133597" +
-//                "               }," +
-//                "               \"duration\" : {" +
-//                "                  \"text\" : \"1 uur 33 min.\"," +
-//                "                  \"value\" : 5562" +
-//                "               }," +
-//                "               \"status\" : \"OK\"" +
-//                "            }," +
-//                "            {" +
-//                "               \"distance\" : {" +
-//                "                  \"text\" : \"165 km\"," +
-//                "                  \"value\" : 165452" +
-//                "               }," +
-//                "               \"duration\" : {" +
-//                "                  \"text\" : \"1 uur 45 min.\"," +
-//                "                  \"value\" : 6292" +
-//                "               }," +
-//                "               \"status\" : \"OK\"" +
-//                "            }," +
-//                "            {" +
-//                "               \"distance\" : {" +
-//                "                  \"text\" : \"37,0 km\"," +
-//                "                  \"value\" : 37046" +
-//                "               }," +
-//                "               \"duration\" : {" +
-//                "                  \"text\" : \"33 min.\"," +
-//                "                  \"value\" : 1961" +
-//                "               }," +
-//                "               \"status\" : \"OK\"" +
-//                "            }" +
-//                "         ]" +
-//                "      }," +
-//                "      {" +
-//                "         \"elements\" : [" +
-//                "            {" +
-//                "               \"distance\" : {" +
-//                "                  \"text\" : \"93,9 km\"," +
-//                "                  \"value\" : 93935" +
-//                "               }," +
-//                "               \"duration\" : {" +
-//                "                  \"text\" : \"1 uur 11 min.\"," +
-//                "                  \"value\" : 4283" +
-//                "               }," +
-//                "               \"status\" : \"OK\"" +
-//                "            }," +
-//                "            {" +
-//                "               \"distance\" : {" +
-//                "                  \"text\" : \"26,2 km\"," +
-//                "                  \"value\" : 26159" +
-//                "               }," +
-//                "               \"duration\" : {" +
-//                "                  \"text\" : \"29 min.\"," +
-//                "                  \"value\" : 1745" +
-//                "               }," +
-//                "               \"status\" : \"OK\"" +
-//                "            }," +
-//                "            {" +
-//                "               \"distance\" : {" +
-//                "                  \"text\" : \"191 km\"," +
-//                "                  \"value\" : 191328" +
-//                "               }," +
-//                "               \"duration\" : {" +
-//                "                  \"text\" : \"1 uur 59 min.\"," +
-//                "                  \"value\" : 7136" +
-//                "               }," +
-//                "               \"status\" : \"OK\"" +
-//                "            }" +
-//                "         ]" +
-//                "      }" +
-//                "   ]," +
-//                "   \"status\" : \"OK\"" +
-//                "}";
 
+        ArrayList<Locatie> stationVerEind = new ArrayList<>();
+        stationVerEind.add(origin);
+        stationVerEind.add(destination);
+        String res = HttpRequest.getGoogleMatrix(stationVerEind, stationPlaatsen, 1);
+
+        return sortStationRoute(parseStationGoogleRes(res), stationPlaatsen);
+    }
+
+    private static ArrayList<HashMap> parseStationGoogleRes(String res) {
         try {
             JSONArray jsonArr = new JSONArray("["+res+"]");
             //JSONObject ts = new JSONObject(res);
@@ -184,6 +190,20 @@ public class RouteCalculator {
                     break;
                 }
             }
+            ArrayList<HashMap> result = new ArrayList<>();
+            result.add(unsortedMap1);
+            result.add(unsortedMap2);
+            return result;
+        } catch (JSONException e) {
+            e.printStackTrace();
+            return new ArrayList<HashMap>();
+        }
+    }
+    private static ArrayList<Locatie> sortStationRoute(ArrayList<HashMap> parseResult, ArrayList<Locatie> stationPlaatsen) {
+        ArrayList<Locatie> stationPlaatsBeginEind = new ArrayList<>();
+        try {
+            HashMap<Integer,Integer> unsortedMap1 = parseResult.get(0);
+            HashMap<Integer,Integer> unsortedMap2 = parseResult.get(1);
             if(unsortedMap1 != null && unsortedMap2 != null) {
                 Set<Map.Entry<Integer, Integer>> set1 = unsortedMap1.entrySet();
                 List<Map.Entry<Integer, Integer>> list1 = new ArrayList<Map.Entry<Integer, Integer>>(set1);
@@ -207,17 +227,10 @@ public class RouteCalculator {
             } else {
                 return stationPlaatsBeginEind;
             }
-        } catch (JSONException e) {
+        } catch (Exception e) {
             e.printStackTrace();
             return stationPlaatsBeginEind;
         }
-    }
-
-    private static void parseGoogleReq() {
-
-    }
-    private static void sortRoute() {
-
     }
 
 

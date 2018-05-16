@@ -6,6 +6,7 @@
       <synchronize>true</synchronize>
       <jdbc-driver>org.apache.derby.jdbc.EmbeddedDriver</jdbc-driver>
       <jdbc-url>jdbc:derby:$PROJECT_DIR$/DBTZT</jdbc-url>
+      <default-dialect>Derby</default-dialect>
     </data-source>
   </component>
 </project>
