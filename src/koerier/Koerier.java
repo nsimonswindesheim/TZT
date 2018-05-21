@@ -12,9 +12,7 @@ public abstract class Koerier {
 
     @Override
     public String toString() {
-        return "Koerier{" +
-                "naam='" + naam + '\'' +
-                '}';
+        return naam;
     }
 
     public abstract double calculateCost(int afstand);

@@ -1,7 +1,8 @@
 package klant;
 
 import general.DBConnection;
-import general.Locatie;
+import locatie.Locatie;
+import locatie.LocatieDAODerby;
 
 public class Klant {
 
@@ -36,7 +37,9 @@ public class Klant {
         this.achternaam = achternaam;
         this.email = email;
         this.telefoonnummer = telefoonnummer;
-        this.locatie = new Locatie(straat, huisnummer, postcode, plaats);
+        if(plaats != null) {
+            this.locatie = new LocatieDAODerby().newLocatie(straat, huisnummer, postcode, plaats);
+        }
     }
     public Klant(String achternaam, String email, String telefoonnummer, String straat, String huisnummer, String postcode, String plaats) {
         this(null, achternaam, email, telefoonnummer, straat, huisnummer, postcode, plaats);
@@ -47,7 +50,11 @@ public class Klant {
 
 
     public String getVoornaam() {
-        return voornaam;
+        if(voornaam != null) {
+            return voornaam;
+        } else {
+            return "";
+        }
     }
 
     public String getAchternaam() {

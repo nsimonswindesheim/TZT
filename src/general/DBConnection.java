@@ -45,16 +45,4 @@ public class DBConnection {
             e.printStackTrace();
         }
     }
-
-    public void getSql(String tName, String colm) throws SQLException {
-        try {
-            statement = connect.prepareStatement("SELECT ? FROM ?");
-            statement.setString(1, colm);
-            statement.setString(2, tName);
-            resultSet = statement.executeQuery();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-    }
-
 }

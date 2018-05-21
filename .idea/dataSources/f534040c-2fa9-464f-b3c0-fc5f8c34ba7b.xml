@@ -18,102 +18,235 @@
     <schema id="12" parent="1" name="SYSSTAT"/>
     <table id="13" parent="2" name="FIETSPLAATS"/>
     <table id="14" parent="2" name="KLANT"/>
-    <table id="15" parent="2" name="STATIONPLAATS"/>
-    <column id="16" parent="13" name="PLAATS">
+    <table id="15" parent="2" name="LOCATIE"/>
+    <table id="16" parent="2" name="ROUTE"/>
+    <table id="17" parent="2" name="ROUTESTEP"/>
+    <table id="18" parent="2" name="STATIONPLAATS"/>
+    <table id="19" parent="2" name="VERZENDING"/>
+    <column id="20" parent="13" name="ID">
       <Position>1</Position>
-      <DataType>VARCHAR(100)|12</DataType>
+      <DataType>INTEGER(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DefaultExpression>AUTOINCREMENT: start 0 increment 1</DefaultExpression>
+    </column>
+    <column id="21" parent="13" name="LOCATIE_ID">
+      <Position>2</Position>
+      <DataType>INTEGER(10)|4</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="17" parent="13" name="SQL180513191854060">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>PLAATS</ColNames>
+    <key id="22" parent="13" name="FIETSPLAATS_ID_PK">
+      <ColNames>ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="18" parent="14" name="Klant-ID">
+    <column id="23" parent="14" name="Klant-ID">
       <Position>1</Position>
       <DataType>INTEGER(10)|4</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <DefaultExpression>AUTOINCREMENT: start 1 increment 1</DefaultExpression>
     </column>
-    <column id="19" parent="14" name="VOORNAAM">
+    <column id="24" parent="14" name="VOORNAAM">
       <Position>2</Position>
       <DataType>VARCHAR(100)|12</DataType>
     </column>
-    <column id="20" parent="14" name="ACHTERNAAM">
+    <column id="25" parent="14" name="ACHTERNAAM">
       <Position>3</Position>
       <DataType>VARCHAR(100)|12</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="21" parent="14" name="EMAIL">
+    <column id="26" parent="14" name="EMAIL">
       <Position>4</Position>
       <DataType>VARCHAR(256)|12</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="22" parent="14" name="TELEFOONNUMMER">
+    <column id="27" parent="14" name="TELEFOONNUMMER">
       <Position>5</Position>
       <DataType>VARCHAR(15)|12</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="23" parent="14" name="STRAAT">
+    <column id="28" parent="14" name="AANMAAK_DATUM">
       <Position>6</Position>
-      <DataType>VARCHAR(95)|12</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="24" parent="14" name="HUISNUMMER">
-      <Position>7</Position>
-      <DataType>VARCHAR(6)|12</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="25" parent="14" name="POSTCODE">
-      <Position>8</Position>
-      <DataType>VARCHAR(6)|12</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="26" parent="14" name="PLAATS">
-      <Position>9</Position>
-      <DataType>VARCHAR(35)|12</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="27" parent="14" name="AANMAAK_DATUM">
-      <Position>10</Position>
       <DataType>TIMESTAMP(29,9)|93</DataType>
     </column>
-    <index id="28" parent="14" name="KLANT_EMAIL_UINDEX">
+    <column id="29" parent="14" name="LOCATIE">
+      <Position>7</Position>
+      <DataType>INTEGER(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="30" parent="14" name="KLANT_EMAIL_UINDEX">
       <ColNames>EMAIL</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="29" parent="14" name="SQL180509095422320">
+    <key id="31" parent="14" name="SQL180509095422320">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>Klant-ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="30" parent="15" name="ID">
+    <column id="32" parent="15" name="ID">
+      <Position>1</Position>
+      <DataType>INTEGER(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DefaultExpression>AUTOINCREMENT: start 28 increment 1</DefaultExpression>
+    </column>
+    <column id="33" parent="15" name="STRAAT">
+      <Position>2</Position>
+      <DataType>VARCHAR(95)|12</DataType>
+    </column>
+    <column id="34" parent="15" name="HUISNUMMER">
+      <Position>3</Position>
+      <DataType>VARCHAR(6)|12</DataType>
+    </column>
+    <column id="35" parent="15" name="POSTCODE">
+      <Position>4</Position>
+      <DataType>VARCHAR(6)|12</DataType>
+    </column>
+    <column id="36" parent="15" name="PLAATS">
+      <Position>5</Position>
+      <DataType>VARCHAR(35)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="37" parent="15" name="SQL180517092159220">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="38" parent="16" name="ID">
       <Position>1</Position>
       <DataType>INTEGER(10)|4</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <DefaultExpression>AUTOINCREMENT: start 1 increment 1</DefaultExpression>
     </column>
-    <column id="31" parent="15" name="STRAAT">
+    <column id="39" parent="16" name="AFSTAND">
       <Position>2</Position>
-      <DataType>VARCHAR(95)|12</DataType>
+      <DataType>INTEGER(10)|4</DataType>
+      <NotNull>1</NotNull>
     </column>
-    <column id="32" parent="15" name="HUISNUMMER">
+    <column id="40" parent="16" name="TIJD">
       <Position>3</Position>
-      <DataType>VARCHAR(6)|12</DataType>
+      <DataType>INTEGER(10)|4</DataType>
+      <NotNull>1</NotNull>
     </column>
-    <column id="33" parent="15" name="POSTCODE">
+    <column id="41" parent="16" name="GREENLVL">
       <Position>4</Position>
-      <DataType>VARCHAR(6)|12</DataType>
+      <DataType>INTEGER(10)|4</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="34" parent="15" name="PLAATS">
+    <column id="42" parent="16" name="KOSTEN">
       <Position>5</Position>
-      <DataType>VARCHAR(35)|12</DataType>
+      <DataType>DOUBLE(52)|8</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="35" parent="15" name="SQL180516100944350">
+    <key id="43" parent="16" name="SQL180517080227070">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="44" parent="17" name="ID">
+      <Position>1</Position>
+      <DataType>INTEGER(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DefaultExpression>AUTOINCREMENT: start 1 increment 1</DefaultExpression>
+    </column>
+    <column id="45" parent="17" name="ROUTE_ID">
+      <Position>2</Position>
+      <DataType>INTEGER(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="46" parent="17" name="KOSTEN">
+      <Position>3</Position>
+      <DataType>DOUBLE(52)|8</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="47" parent="17" name="AFSTAND">
+      <Position>4</Position>
+      <DataType>INTEGER(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="48" parent="17" name="TIJD">
+      <Position>5</Position>
+      <DataType>INTEGER(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="49" parent="17" name="STATUS">
+      <Position>6</Position>
+      <DataType>INTEGER(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="50" parent="17" name="KOERIER">
+      <Position>7</Position>
+      <DataType>INTEGER(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="51" parent="17" name="GREENLVL">
+      <Position>8</Position>
+      <DataType>INTEGER(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="52" parent="17" name="SQL180517080609950">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="53" parent="18" name="ID">
+      <Position>1</Position>
+      <DataType>INTEGER(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DefaultExpression>AUTOINCREMENT: start 1 increment 1</DefaultExpression>
+    </column>
+    <column id="54" parent="18" name="LOCATIE_ID">
+      <Position>2</Position>
+      <DataType>INTEGER(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="55" parent="18" name="SQL180516100944350">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="56" parent="19" name="ID">
+      <Position>1</Position>
+      <DataType>INTEGER(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DefaultExpression>AUTOINCREMENT: start 1 increment 1</DefaultExpression>
+    </column>
+    <column id="57" parent="19" name="KLANT_ID">
+      <Position>2</Position>
+      <DataType>INTEGER(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="58" parent="19" name="AFHAAL_LOCATIE">
+      <Position>3</Position>
+      <DataType>INTEGER(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="59" parent="19" name="BEZORG_LOCATIE">
+      <Position>4</Position>
+      <DataType>INTEGER(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="60" parent="19" name="ROUTE">
+      <Position>5</Position>
+      <DataType>INTEGER(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="61" parent="19" name="REGISTREER_DATUM">
+      <Position>6</Position>
+      <DataType>TIMESTAMP(29,9)|93</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="62" parent="19" name="STATUS">
+      <Position>7</Position>
+      <DataType>INTEGER(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>0</DefaultExpression>
+    </column>
+    <key id="63" parent="19" name="SQL180517082136240">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ID</ColNames>
       <Primary>1</Primary>

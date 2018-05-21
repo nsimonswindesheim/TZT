@@ -1,10 +1,13 @@
 package route;
 
+import general.Config;
 import koerier.FietsKoerier;
 import koerier.Koerier;
 import koerier.TreinKoerier;
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import java.text.DecimalFormat;
 
 public class RouteStep {
 
@@ -12,11 +15,16 @@ public class RouteStep {
     private int afstand;
     private int tijd;
     private Koerier koerier;
+    private int status = 0;
 
     public RouteStep(Koerier koerier, String googleResult) {
         parseGoogleJson(googleResult);
         this.koerier = koerier;
         this.kosten = koerier.calculateCost(this.afstand);
+    }
+
+    public RouteStep() {
+
     }
 
     public double getKosten() {
@@ -42,21 +50,31 @@ public class RouteStep {
             return 0;
     }
 
-    private void setAfstand(int afstand) {
+    public void setAfstand(int afstand) {
         this.afstand = afstand;
     }
 
-    private void setTijd(int tijd) {
+    public void setTijd(int tijd) {
         this.tijd = tijd;
+    }
+
+    public void setKosten(double kosten) {
+        this.kosten = kosten;
+    }
+
+    public void setKoerier(Koerier koerier) {
+        this.koerier = koerier;
     }
 
     private void parseGoogleJson(String res) {
         try {
             JSONObject jObject = new JSONObject(res).getJSONArray("rows").getJSONObject(0).getJSONArray("elements").getJSONObject(0);
-            setAfstand(jObject.getJSONObject("distance").getInt("value"));
-            setTijd(jObject.getJSONObject("duration").getInt("value"));
+            int afs     = jObject.getJSONObject("distance").getInt("value");
+            int tijd    = jObject.getJSONObject("duration").getInt("value");
+            setAfstand(afs);
+            setTijd(tijd);
         } catch (JSONException e) {
-            e.printStackTrace();
+            //e.printStackTrace();
         }
     }
 }

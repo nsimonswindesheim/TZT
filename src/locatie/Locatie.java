@@ -1,4 +1,4 @@
-package general;
+package locatie;
 
 public class Locatie {
 
@@ -20,7 +20,32 @@ public class Locatie {
     }
 
     public String getFullAddress() {
-        return straat +" "+ huisnummer +", "+ postcode +" "+ plaats;
+        String adres = "";
+        if(straat == null)
+            straat = "";
+        if(huisnummer == null)
+            huisnummer = "";
+        if(postcode == null)
+            postcode = "";
+        if(plaats == null)
+            plaats = "";
+
+        if(!straat.equals(""))
+            adres += straat;
+        if(!straat.equals("") && !huisnummer.equals(""))
+            adres += " ";
+        if(!huisnummer.equals(""))
+            adres += huisnummer;
+        if(!straat.equals("") || !huisnummer.equals(""))
+            adres += ", ";
+        if(!postcode.equals(""))
+            adres += postcode;
+        if(!postcode.equals("") && !plaats.equals(""))
+            adres += " ";
+        if(!plaats.equals(""))
+            adres += plaats;
+
+        return adres;
     }
 
     public String getStraat() {
@@ -37,5 +62,9 @@ public class Locatie {
 
     public String getPlaats() {
         return plaats;
+    }
+
+    public int getId() {
+        return id;
     }
 }
