@@ -2,83 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2bc8fda2-466e-4052-941d-f90d7b0e064c" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/locatie/LocatieDAO.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/locatie/LocatieDAODerby.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/route/RouteDAO.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/route/RouteDAODerby.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/route/RouteStepDAO.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/route/RouteStepDAODerby.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/verzending/VerzendingDAO.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/verzending/VerzendingDAODerby.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f534040c-2fa9-464f-b3c0-fc5f8c34ba7b.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/f534040c-2fa9-464f-b3c0-fc5f8c34ba7b.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/general/Validate.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/DBTZT/db.lck" afterPath="$PROJECT_DIR$/DBTZT/db.lck" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/log/log.ctrl" afterPath="$PROJECT_DIR$/DBTZT/log/log.ctrl" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/log/log8.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/log/logmirror.ctrl" afterPath="$PROJECT_DIR$/DBTZT/log/logmirror.ctrl" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c10.dat" afterPath="$PROJECT_DIR$/DBTZT/seg0/c10.dat" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c101.dat" afterPath="$PROJECT_DIR$/DBTZT/seg0/c101.dat" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c111.dat" afterPath="$PROJECT_DIR$/DBTZT/seg0/c111.dat" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c121.dat" afterPath="$PROJECT_DIR$/DBTZT/seg0/c121.dat" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c130.dat" afterPath="$PROJECT_DIR$/DBTZT/seg0/c130.dat" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c141.dat" afterPath="$PROJECT_DIR$/DBTZT/seg0/c141.dat" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c150.dat" afterPath="$PROJECT_DIR$/DBTZT/seg0/c150.dat" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c161.dat" afterPath="$PROJECT_DIR$/DBTZT/seg0/c161.dat" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c171.dat" afterPath="$PROJECT_DIR$/DBTZT/seg0/c171.dat" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c20.dat" afterPath="$PROJECT_DIR$/DBTZT/seg0/c20.dat" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c230.dat" afterPath="$PROJECT_DIR$/DBTZT/seg0/c230.dat" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c241.dat" afterPath="$PROJECT_DIR$/DBTZT/seg0/c241.dat" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c251.dat" afterPath="$PROJECT_DIR$/DBTZT/seg0/c251.dat" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c2d0.dat" afterPath="$PROJECT_DIR$/DBTZT/seg0/c2d0.dat" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c2e1.dat" afterPath="$PROJECT_DIR$/DBTZT/seg0/c2e1.dat" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c31.dat" afterPath="$PROJECT_DIR$/DBTZT/seg0/c31.dat" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c400.dat" afterPath="$PROJECT_DIR$/DBTZT/seg0/c400.dat" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c41.dat" afterPath="$PROJECT_DIR$/DBTZT/seg0/c41.dat" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c411.dat" afterPath="$PROJECT_DIR$/DBTZT/seg0/c411.dat" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c421.dat" afterPath="$PROJECT_DIR$/DBTZT/seg0/c421.dat" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c4b0.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c4c1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c4d1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c4e0.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c4f1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c500.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c51.dat" afterPath="$PROJECT_DIR$/DBTZT/seg0/c51.dat" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c511.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c60.dat" afterPath="$PROJECT_DIR$/DBTZT/seg0/c60.dat" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c71.dat" afterPath="$PROJECT_DIR$/DBTZT/seg0/c71.dat" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c81.dat" afterPath="$PROJECT_DIR$/DBTZT/seg0/c81.dat" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/c90.dat" afterPath="$PROJECT_DIR$/DBTZT/seg0/c90.dat" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/ca1.dat" afterPath="$PROJECT_DIR$/DBTZT/seg0/ca1.dat" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/cb1.dat" afterPath="$PROJECT_DIR$/DBTZT/seg0/cb1.dat" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/seg0/cf0.dat" afterPath="$PROJECT_DIR$/DBTZT/seg0/cf0.dat" />
-      <change beforePath="$PROJECT_DIR$/DBTZT/service.properties" afterPath="$PROJECT_DIR$/DBTZT/service.properties" />
       <change beforePath="$PROJECT_DIR$/derby.log" afterPath="$PROJECT_DIR$/derby.log" />
       <change beforePath="$PROJECT_DIR$/out/production/TZT/Main.class" afterPath="$PROJECT_DIR$/out/production/TZT/Main.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/TZT/general/DBConnection.class" afterPath="$PROJECT_DIR$/out/production/TZT/general/DBConnection.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/TZT/general/HttpRequest.class" afterPath="$PROJECT_DIR$/out/production/TZT/general/HttpRequest.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/TZT/general/Locatie.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/TZT/klant/Klant.class" afterPath="$PROJECT_DIR$/out/production/TZT/klant/Klant.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/TZT/klant/KlantDAO.class" afterPath="$PROJECT_DIR$/out/production/TZT/klant/KlantDAO.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/TZT/klant/KlantDAODerby.class" afterPath="$PROJECT_DIR$/out/production/TZT/klant/KlantDAODerby.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/TZT/koerier/Koerier.class" afterPath="$PROJECT_DIR$/out/production/TZT/koerier/Koerier.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/TZT/route/Route.class" afterPath="$PROJECT_DIR$/out/production/TZT/route/Route.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/TZT/route/RouteCalculator$1.class" afterPath="$PROJECT_DIR$/out/production/TZT/route/RouteCalculator$1.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/TZT/route/RouteCalculator$2.class" afterPath="$PROJECT_DIR$/out/production/TZT/route/RouteCalculator$2.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/TZT/general/Config.class" afterPath="$PROJECT_DIR$/out/production/TZT/general/Config.class" />
       <change beforePath="$PROJECT_DIR$/out/production/TZT/route/RouteCalculator.class" afterPath="$PROJECT_DIR$/out/production/TZT/route/RouteCalculator.class" />
       <change beforePath="$PROJECT_DIR$/out/production/TZT/route/RouteStep.class" afterPath="$PROJECT_DIR$/out/production/TZT/route/RouteStep.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/TZT/verzending/Verzending.class" afterPath="$PROJECT_DIR$/out/production/TZT/verzending/Verzending.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/TZT/schermen/NieuweKlant$1.class" afterPath="$PROJECT_DIR$/out/production/TZT/schermen/NieuweKlant$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/TZT/schermen/NieuweKlant.class" afterPath="$PROJECT_DIR$/out/production/TZT/schermen/NieuweKlant.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/TZT/schermen/OverzichtBestaandeKlant.class" afterPath="$PROJECT_DIR$/out/production/TZT/schermen/OverzichtBestaandeKlant.class" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
-      <change beforePath="$PROJECT_DIR$/src/general/DBConnection.java" afterPath="$PROJECT_DIR$/src/general/DBConnection.java" />
-      <change beforePath="$PROJECT_DIR$/src/general/HttpRequest.java" afterPath="$PROJECT_DIR$/src/general/HttpRequest.java" />
-      <change beforePath="$PROJECT_DIR$/src/general/Locatie.java" afterPath="$PROJECT_DIR$/src/locatie/Locatie.java" />
-      <change beforePath="$PROJECT_DIR$/src/klant/Klant.java" afterPath="$PROJECT_DIR$/src/klant/Klant.java" />
-      <change beforePath="$PROJECT_DIR$/src/klant/KlantDAO.java" afterPath="$PROJECT_DIR$/src/klant/KlantDAO.java" />
-      <change beforePath="$PROJECT_DIR$/src/klant/KlantDAODerby.java" afterPath="$PROJECT_DIR$/src/klant/KlantDAODerby.java" />
-      <change beforePath="$PROJECT_DIR$/src/koerier/Koerier.java" afterPath="$PROJECT_DIR$/src/koerier/Koerier.java" />
-      <change beforePath="$PROJECT_DIR$/src/route/Route.java" afterPath="$PROJECT_DIR$/src/route/Route.java" />
+      <change beforePath="$PROJECT_DIR$/src/general/Config.java" afterPath="$PROJECT_DIR$/src/general/Config.java" />
       <change beforePath="$PROJECT_DIR$/src/route/RouteCalculator.java" afterPath="$PROJECT_DIR$/src/route/RouteCalculator.java" />
-      <change beforePath="$PROJECT_DIR$/src/route/RouteStep.java" afterPath="$PROJECT_DIR$/src/route/RouteStep.java" />
-      <change beforePath="$PROJECT_DIR$/src/verzending/Verzending.java" afterPath="$PROJECT_DIR$/src/verzending/Verzending.java" />
+      <change beforePath="$PROJECT_DIR$/src/schermen/NieuweKlant.java" afterPath="$PROJECT_DIR$/src/schermen/NieuweKlant.java" />
+      <change beforePath="$PROJECT_DIR$/src/schermen/OverzichtBestaandeKlant.java" afterPath="$PROJECT_DIR$/src/schermen/OverzichtBestaandeKlant.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -107,6 +46,18 @@
         <item name="DBTZT" type="feb32156:DbDataSourceImpl" />
         <item name="APP: schema" type="6aa84934:DerbyImplModel$Schema" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="DBTZT" type="feb32156:DbDataSourceImpl" />
+        <item name="APP: schema" type="6aa84934:DerbyImplModel$Schema" />
+        <item name="KLANT: table" type="3b012a07:DerbyImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="DBTZT" type="feb32156:DbDataSourceImpl" />
+        <item name="APP: schema" type="6aa84934:DerbyImplModel$Schema" />
+        <item name="LOCATIE: table" type="3b012a07:DerbyImplModel$Table" />
+      </path>
     </expand>
     <select />
   </component>
@@ -115,18 +66,92 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="20" column="31" lean-forward="false" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+            <state relative-caret-position="90">
+              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="24" selection-end-column="50" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Route.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Validate.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/general/Validate.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="32" column="125" lean-forward="true" selection-start-line="32" selection-start-column="125" selection-end-line="32" selection-end-column="125" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2414#2415#0" expanded="true" />
+                <element signature="e#2455#2456#0" expanded="true" />
+                <element signature="e#2789#2790#0" expanded="true" />
+                <element signature="e#2834#2835#0" expanded="true" />
+                <element signature="e#2897#2898#0" expanded="true" />
+                <element signature="e#2942#2943#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NieuweKlant.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/schermen/NieuweKlant.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="140" column="12" lean-forward="true" selection-start-line="140" selection-start-column="12" selection-end-line="158" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RouteStepDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/route/RouteStepDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OverzichtBestaandeKlant.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/schermen/OverzichtBestaandeKlant.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="33" column="82" lean-forward="true" selection-start-line="33" selection-start-column="82" selection-end-line="33" selection-end-column="82" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RouteCalculator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/route/RouteCalculator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="331">
+              <caret line="165" column="41" lean-forward="true" selection-start-line="165" selection-start-column="41" selection-end-line="165" selection-end-column="41" />
+              <folding>
+                <marker date="1526904028208" expanded="true" signature="7080:7209" ph="SELECT LOCAT... FIETSPLAATS" />
+                <marker date="1526904028208" expanded="true" signature="8039:8046" ph="SELECT * FRO... FIETSPLAATS" />
+                <marker date="1526904028208" expanded="true" signature="8039:8205" ph="SELECT * FRO... STATIONPLAATS" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OverzichtRouteVerzending.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/schermen/OverzichtRouteVerzending.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="182" column="150" lean-forward="true" selection-start-line="182" selection-start-column="16" selection-end-line="182" selection-end-column="150" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Route.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/route/Route.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="26" column="36" lean-forward="true" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
+            <state relative-caret-position="424">
+              <caret line="36" column="49" lean-forward="true" selection-start-line="36" selection-start-column="49" selection-end-line="36" selection-end-column="49" />
               <folding>
                 <element signature="e#897#898#0" expanded="true" />
                 <element signature="e#926#927#0" expanded="true" />
@@ -216,6 +241,7 @@
       <find>derby.language.sequence.</find>
       <find>getVerzendingen</find>
       <find>test</find>
+      <find>28801</find>
     </findStrings>
     <replaceStrings>
       <replace>'</replace>
@@ -223,6 +249,7 @@
       <replace>bestaandeKlant</replace>
       <replace>westPanel1</replace>
       <replace>hoofdScherm</replace>
+      <replace>Config.MAX_REISTIJD</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -236,9 +263,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Klant.java" />
-        <option value="$PROJECT_DIR$/src/RoutePackage/Route.java" />
-        <option value="$PROJECT_DIR$/src/DBConnection.java" />
         <option value="$PROJECT_DIR$/src/RouteSep.java" />
         <option value="$PROJECT_DIR$/src/Verzending.java" />
         <option value="$PROJECT_DIR$/src/FietsKoerier.java" />
@@ -260,7 +284,6 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/f534040c-2fa9-464f-b3c0-fc5f8c34ba7b/console_3.sql" />
         <option value="$PROJECT_DIR$/src/locatie/LocatieDAO.java" />
         <option value="$PROJECT_DIR$/src/locatie/LocatieDAODerby.java" />
-        <option value="$PROJECT_DIR$/src/route/RouteStepDAO.java" />
         <option value="$PROJECT_DIR$/src/route/RouteDAO.java" />
         <option value="$PROJECT_DIR$/src/verzending/VerzendingDAO.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/f534040c-2fa9-464f-b3c0-fc5f8c34ba7b/console_4.sql" />
@@ -268,16 +291,13 @@
         <option value="$PROJECT_DIR$/src/klant/Klant.java" />
         <option value="$PROJECT_DIR$/src/koerier/Koerier.java" />
         <option value="$PROJECT_DIR$/src/klant/KlantDAO.java" />
-        <option value="$PROJECT_DIR$/src/schermen/NieuweKlant.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/f534040c-2fa9-464f-b3c0-fc5f8c34ba7b/console_5.sql" />
         <option value="$PROJECT_DIR$/src/route/RouteStepDAODerby.java" />
         <option value="$PROJECT_DIR$/src/klant/KlantDAODerby.java" />
         <option value="$PROJECT_DIR$/src/schermen/OverzichtRouteVerzending.java" />
-        <option value="$PROJECT_DIR$/src/general/Config.java" />
         <option value="$PROJECT_DIR$/DBTZT/service.properties" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/f534040c-2fa9-464f-b3c0-fc5f8c34ba7b/console_6.sql" />
         <option value="$PROJECT_DIR$/src/general/DBConnection.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/verzending/VerzendingDAODerby.java" />
         <option value="$PROJECT_DIR$/src/schermen/Inlogscherm.java" />
         <option value="$PROJECT_DIR$/src/schermen/Hoofdmenu.java" />
@@ -285,7 +305,14 @@
         <option value="$PROJECT_DIR$/src/verzending/Verzending.java" />
         <option value="$PROJECT_DIR$/src/route/Route.java" />
         <option value="$PROJECT_DIR$/src/route/RouteStep.java" />
+        <option value="$PROJECT_DIR$/src/general/Config.java" />
         <option value="$PROJECT_DIR$/src/route/RouteCalculator.java" />
+        <option value="$PROJECT_DIR$/src/route/RouteStepDAO.java" />
+        <option value="$PROJECT_DIR$/src/general/Validatie.java" />
+        <option value="$PROJECT_DIR$/src/general/Message.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/general/Validate.java" />
+        <option value="$PROJECT_DIR$/src/schermen/NieuweKlant.java" />
         <option value="$PROJECT_DIR$/src/schermen/OverzichtBestaandeKlant.java" />
       </list>
     </option>
@@ -297,9 +324,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="1680" />
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="width" value="1680" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -358,37 +384,7 @@
               <item name="TZT" type="b2602c69:ProjectViewProjectNode" />
               <item name="TZT" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="klant" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TZT" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TZT" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="koerier" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TZT" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TZT" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="locatie" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TZT" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TZT" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="route" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TZT" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TZT" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="schermen" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TZT" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TZT" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="verzending" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -405,7 +401,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Derby (Embedded)" />
     <property name="settings.editor.selected.configurable" value="copyright" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="database.data.extractors.current.id" value="SQL Inserts" />
@@ -565,7 +561,7 @@
       <workItem from="1526764363276" duration="15772000" />
       <workItem from="1526829419791" duration="1399000" />
       <workItem from="1526830930728" duration="3295000" />
-      <workItem from="1526846215749" duration="13183000" />
+      <workItem from="1526846215749" duration="22516000" />
     </task>
     <task id="LOCAL-00001" summary="Some classes">
       <created>1525688184540</created>
@@ -578,10 +574,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="187981000" />
+    <option name="totallyTimeSpent" value="197314000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1680" y="0" width="1920" height="1080" extended-state="0" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -598,15 +594,15 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4912999" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1400426" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17305644" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16178267" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1984127" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958034" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42403176" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4370522" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -633,138 +629,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="das://src:table:/1792995d/f534040c-2fa9-464f-b3c0-fc5f8c34ba7b/APP.FIETSPLAATS">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f534040c-2fa9-464f-b3c0-fc5f8c34ba7b/console_1.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="53" lean-forward="true" selection-start-line="0" selection-start-column="53" selection-end-line="0" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Downloads/java-json.jar!/org/json/JSONArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="175" column="0" lean-forward="false" selection-start-line="175" selection-start-column="0" selection-end-line="175" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="122" column="19" lean-forward="false" selection-start-line="122" selection-start-column="19" selection-end-line="122" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/koerier/TreinKoerier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="10" column="16" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-          <folding>
-            <element signature="e#191#192#0" expanded="false" />
-            <element signature="e#215#216#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://src:table:/1792995d/f534040c-2fa9-464f-b3c0-fc5f8c34ba7b/APP.STATIONPLAATS">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/general/HttpRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" column="5" lean-forward="false" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/koerier/FietsKoerier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f534040c-2fa9-464f-b3c0-fc5f8c34ba7b/console_2.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="130" lean-forward="false" selection-start-line="0" selection-start-column="104" selection-end-line="0" selection-end-column="130" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://src:table:/1792995d/f534040c-2fa9-464f-b3c0-fc5f8c34ba7b/APP.LOCATIE">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="2" lean-forward="false" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f534040c-2fa9-464f-b3c0-fc5f8c34ba7b/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="53" lean-forward="false" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f534040c-2fa9-464f-b3c0-fc5f8c34ba7b/console_3.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="148" lean-forward="false" selection-start-line="0" selection-start-column="148" selection-end-line="0" selection-end-column="148" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/koerier/PietersenTransport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/locatie/LocatieDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="35" lean-forward="false" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/1792995d/f534040c-2fa9-464f-b3c0-fc5f8c34ba7b/APP.STATIONPLAATS">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/route/RouteStepDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="68" lean-forward="false" selection-start-line="5" selection-start-column="68" selection-end-line="5" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/route/RouteDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="31" lean-forward="false" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/verzending/VerzendingDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -850,14 +714,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/general/Config.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="79" lean-forward="false" selection-start-line="7" selection-start-column="79" selection-end-line="7" selection-end-column="79" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://table:/1792995d/f534040c-2fa9-464f-b3c0-fc5f8c34ba7b/APP.FIETSPLAATS">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -869,14 +725,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="53" lean-forward="false" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/schermen/NieuweKlant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="145" column="16" lean-forward="false" selection-start-line="145" selection-start-column="16" selection-end-line="145" selection-end-column="146" />
           <folding />
         </state>
       </provider>
@@ -965,14 +813,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/schermen/OverzichtRouteVerzending.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-211">
-          <caret line="131" column="48" lean-forward="false" selection-start-line="131" selection-start-column="48" selection-end-line="131" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/schermen/Hoofdmenu.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="455">
@@ -1014,54 +854,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/verzending/Verzending.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="29" column="32" lean-forward="false" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/route/RouteStep.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="78" column="5" lean-forward="true" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/route/RouteCalculator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="126" column="16" lean-forward="false" selection-start-line="126" selection-start-column="16" selection-end-line="126" selection-end-column="16" />
-          <folding>
-            <marker date="1526903633698" expanded="true" signature="6434:6563" ph="SELECT LOCAT... FIETSPLAATS" />
-            <marker date="1526903633698" expanded="true" signature="7393:7400" ph="SELECT * FRO... FIETSPLAATS" />
-            <marker date="1526903633698" expanded="true" signature="7393:7559" ph="SELECT * FRO... STATIONPLAATS" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="20" column="31" lean-forward="false" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/schermen/OverzichtBestaandeKlant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="228" column="112" lean-forward="true" selection-start-line="228" selection-start-column="112" selection-end-line="228" selection-end-column="112" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/route/Route.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="26" column="36" lean-forward="true" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
+        <state relative-caret-position="424">
+          <caret line="36" column="49" lean-forward="true" selection-start-line="36" selection-start-column="49" selection-end-line="36" selection-end-column="49" />
           <folding>
             <element signature="e#897#898#0" expanded="true" />
             <element signature="e#926#927#0" expanded="true" />
@@ -1090,6 +886,447 @@
             <element signature="e#2357#2358#0" expanded="true" />
             <element signature="e#2390#2391#0" expanded="true" />
             <element signature="e#2418#2419#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/verzending/Verzending.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="29" column="32" lean-forward="false" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/route/RouteStep.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="78" column="5" lean-forward="true" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/general/Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="40" lean-forward="false" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/route/RouteCalculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="165" column="41" lean-forward="true" selection-start-line="165" selection-start-column="41" selection-end-line="165" selection-end-column="41" />
+          <folding>
+            <marker date="1526904028208" expanded="true" signature="7080:7209" ph="SELECT LOCAT... FIETSPLAATS" />
+            <marker date="1526904028208" expanded="true" signature="8039:8046" ph="SELECT * FRO... FIETSPLAATS" />
+            <marker date="1526904028208" expanded="true" signature="8039:8205" ph="SELECT * FRO... STATIONPLAATS" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement />
+          <nodes>
+            <node x="" y="">com</node>
+            <node x="" y="">netscape</node>
+            <node x="" y="">lib</node>
+            <node x="" y="">toolbarButtonGraphics</node>
+            <node x="" y="">koerier</node>
+            <node x="" y="">sun</node>
+            <node x="" y="">general</node>
+            <node x="" y="">apple</node>
+            <node x="" y="">groovyjarjarasm</node>
+            <node x="" y="">java</node>
+            <node x="" y="">javax</node>
+            <node x="" y="">javafx</node>
+            <node x="" y="">schermen</node>
+            <node x="" y="">images</node>
+            <node x="" y="">oracle</node>
+            <node x="" y="">locatie</node>
+            <node x="" y="">org</node>
+            <node x="" y="">klant</node>
+            <node x="" y="">verzending</node>
+            <node x="" y="">META-INF</node>
+            <node x="" y="">jdk</node>
+            <node x="" y="">route</node>
+            <node x="" y="">groovy</node>
+            <node x="" y="">groovyjarjarcommonscli</node>
+            <node x="" y="">groovyjarjarantlr</node>
+            <node x="" y="">Main</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.7237129485179409" x="288.4999999999998" y="310.49999999999994" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JavaScript-modules-diagram//Users/nicksimons/Documents/TZT/TZT/src/verzending">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$/src/verzending</OriginalElement>
+          <nodes />
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="644.0" y="264.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <VISIBILITY>Details</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JavaScript-modules-diagram//Users/nicksimons/Documents/TZT/TZT/src/koerier;/Users/nicksimons/Documents/TZT/TZT/src/route;/Users/nicksimons/Documents/TZT/TZT/src/locatie;/Users/nicksimons/Documents/TZT/TZT/src/klant;/Users/nicksimons/Documents/TZT/TZT/src/general;/Users/nicksimons/Documents/TZT/TZT/src/schermen;/Users/nicksimons/Documents/TZT/TZT/src/verzending;">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$/src/koerier;/Users/nicksimons/Documents/TZT/TZT/src/route;/Users/nicksimons/Documents/TZT/TZT/src/locatie;/Users/nicksimons/Documents/TZT/TZT/src/klant;/Users/nicksimons/Documents/TZT/TZT/src/general;/Users/nicksimons/Documents/TZT/TZT/src/schermen;/Users/nicksimons/Documents/TZT/TZT/src/verzending;</OriginalElement>
+          <nodes />
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="644.0" y="-5196.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <VISIBILITY>Details</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://MODULES/mdl-TZT">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>MODULES</ID>
+          <OriginalElement>mdl-TZT</OriginalElement>
+          <nodes>
+            <node x="" y="">mdl-TZT</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="56.0" y="14.5" />
+          <SelectedNodes />
+          <Categories />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JavaScript-modules-diagram//Users/nicksimons/Documents/TZT/TZT/src/verzending;/Users/nicksimons/Documents/TZT/TZT/src/schermen;">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$/src/verzending;/Users/nicksimons/Documents/TZT/TZT/src/schermen;</OriginalElement>
+          <nodes />
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="644.0" y="264.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <VISIBILITY>Details</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/verzending">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>verzending</OriginalElement>
+          <nodes>
+            <node x="-270.0" y="0.22222222222222854">verzending.Verzending</node>
+            <node x="0.0" y="145.0">verzending.VerzendingDAODerby</node>
+            <node x="0.0" y="0.0">verzending.VerzendingDAO</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="verzending.VerzendingDAODerby" target="verzending.VerzendingDAO">
+              <point x="0.0" y="-59.0" />
+              <point x="0.0" y="47.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.9" x="-379.3333333333333" y="184.66666666666669" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+            <Category>Fields</Category>
+            <Category>Properties</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/route">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>route</OriginalElement>
+          <nodes>
+            <node x="" y="">route.RouteStepDAODerby</node>
+            <node x="" y="">route.RouteCalculator</node>
+            <node x="" y="">route.RouteStepDAO</node>
+            <node x="" y="">route.RouteDAO</node>
+            <node x="" y="">route.RouteDAODerby</node>
+            <node x="" y="">route.RouteStep</node>
+            <node x="" y="">route.Route</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.9" x="80.55555555555554" y="348.3333333333333" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+            <Category>Properties</Category>
+            <Category>Inner Classes</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/locatie">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>locatie</OriginalElement>
+          <nodes>
+            <node x="" y="">locatie.Locatie</node>
+            <node x="" y="">locatie.LocatieDAODerby</node>
+            <node x="" y="">locatie.LocatieDAO</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="78.0" y="191.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Inner Classes</Category>
+            <Category>Properties</Category>
+            <Category>Methods</Category>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/koerier">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>koerier</OriginalElement>
+          <nodes>
+            <node x="" y="">koerier.PietersenTransport</node>
+            <node x="" y="">koerier.BodeKoerier</node>
+            <node x="" y="">koerier.Koerier</node>
+            <node x="" y="">koerier.FietsKoerier</node>
+            <node x="" y="">koerier.TreinKoerier</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="343.0" y="54.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+            <Category>Properties</Category>
+            <Category>Inner Classes</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/schermen">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>schermen</OriginalElement>
+          <nodes>
+            <node x="" y="">schermen.NieuweKlant</node>
+            <node x="" y="">schermen.OverzichtBestaandeKlant</node>
+            <node x="" y="">schermen.OverzichtRouteVerzending</node>
+            <node x="" y="">schermen.Hoofdmenu</node>
+            <node x="" y="">schermen.Inlogscherm</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="569.5" y="402.5" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+            <Category>Properties</Category>
+            <Category>Inner Classes</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/klant">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>klant</OriginalElement>
+          <nodes>
+            <node x="" y="">klant.KlantDAO</node>
+            <node x="" y="">klant.KlantDAODerby</node>
+            <node x="" y="">klant.Klant</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="234.5" y="324.5" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+            <Category>Properties</Category>
+            <Category>Inner Classes</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ClassDiagram/general.uml">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>general</OriginalElement>
+          <nodes>
+            <node x="" y="">general.DBConnection</node>
+            <node x="" y="">general.Config</node>
+            <node x="" y="">general.HttpRequest</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="69.0" y="109.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Inner Classes</Category>
+            <Category>Constructors</Category>
+            <Category>Properties</Category>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="3115" column="0" lean-forward="false" selection-start-line="3115" selection-start-column="0" selection-end-line="3115" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/route/RouteStepDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/general/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/schermen/OverzichtRouteVerzending.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="182" column="150" lean-forward="true" selection-start-line="182" selection-start-column="16" selection-end-line="182" selection-end-column="150" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/general/Validate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="125" lean-forward="true" selection-start-line="32" selection-start-column="125" selection-end-line="32" selection-end-column="125" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2414#2415#0" expanded="true" />
+            <element signature="e#2455#2456#0" expanded="true" />
+            <element signature="e#2789#2790#0" expanded="true" />
+            <element signature="e#2834#2835#0" expanded="true" />
+            <element signature="e#2897#2898#0" expanded="true" />
+            <element signature="e#2942#2943#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/general">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>general</OriginalElement>
+          <nodes>
+            <node x="" y="">general.Validate</node>
+            <node x="" y="">general.DBConnection</node>
+            <node x="" y="">general.Config</node>
+            <node x="" y="">general.HttpRequest</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="115.5" y="382.5" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Constructors</Category>
+            <Category>Fields</Category>
+            <Category>Methods</Category>
+            <Category>Properties</Category>
+            <Category>Inner Classes</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="24" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/schermen/NieuweKlant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="140" column="12" lean-forward="true" selection-start-line="140" selection-start-column="12" selection-end-line="158" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/schermen/OverzichtBestaandeKlant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="82" lean-forward="true" selection-start-line="33" selection-start-column="82" selection-end-line="33" selection-end-column="82" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

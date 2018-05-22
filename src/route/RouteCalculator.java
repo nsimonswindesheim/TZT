@@ -1,5 +1,6 @@
 package route;
 
+import general.Config;
 import general.DBConnection;
 import general.HttpRequest;
 import locatie.Locatie;
@@ -47,7 +48,8 @@ public class RouteCalculator {
                 tijdelijkeRoute.addStep(new FietsKoerier(), deel1Fiets);
                 tijdelijkeRoute.addStep(new TreinKoerier(), deel2);
                 tijdelijkeRoute.addStep(new FietsKoerier(), deel3Fiets);
-                mogelijkheden.add(tijdelijkeRoute);
+                if(tijdelijkeRoute.getSteps().size() > 0 && tijdelijkeRoute.getTijd() < Config.MAX_REISTIJD)
+                    mogelijkheden.add(tijdelijkeRoute);
             }
 
             //Fiets Trein Auto
@@ -56,13 +58,13 @@ public class RouteCalculator {
                 tijdelijkeRoute.addStep(new FietsKoerier(), deel1Fiets);
                 tijdelijkeRoute.addStep(new TreinKoerier(), deel2);
                 tijdelijkeRoute.addStep(new BodeKoerier(), deel3Auto);
-                if(tijdelijkeRoute.getSteps().size() > 0)
+                if(tijdelijkeRoute.getSteps().size() > 0 && tijdelijkeRoute.getTijd() < Config.MAX_REISTIJD)
                     mogelijkheden.add(tijdelijkeRoute);
                 tijdelijkeRoute = new Route();
                 tijdelijkeRoute.addStep(new FietsKoerier(), deel1Fiets);
                 tijdelijkeRoute.addStep(new TreinKoerier(), deel2);
                 tijdelijkeRoute.addStep(new PietersenTransport(), deel3Auto);
-                if(tijdelijkeRoute.getSteps().size() > 0)
+                if(tijdelijkeRoute.getSteps().size() > 0 && tijdelijkeRoute.getTijd() < Config.MAX_REISTIJD)
                     mogelijkheden.add(tijdelijkeRoute);
             }
 
@@ -71,25 +73,25 @@ public class RouteCalculator {
             tijdelijkeRoute.addStep(new BodeKoerier(), deel1Auto);
             tijdelijkeRoute.addStep(new TreinKoerier(), deel2);
             tijdelijkeRoute.addStep(new BodeKoerier(), deel3Auto);
-            if(tijdelijkeRoute.getSteps().size() > 0)
+            if(tijdelijkeRoute.getSteps().size() > 0 && tijdelijkeRoute.getTijd() < Config.MAX_REISTIJD)
                 mogelijkheden.add(tijdelijkeRoute);
             tijdelijkeRoute = new Route();
             tijdelijkeRoute.addStep(new BodeKoerier(), deel1Auto);
             tijdelijkeRoute.addStep(new TreinKoerier(), deel2);
             tijdelijkeRoute.addStep(new PietersenTransport(), deel3Auto);
-            if(tijdelijkeRoute.getSteps().size() > 0)
+            if(tijdelijkeRoute.getSteps().size() > 0 && tijdelijkeRoute.getTijd() < Config.MAX_REISTIJD)
                 mogelijkheden.add(tijdelijkeRoute);
             tijdelijkeRoute = new Route();
             tijdelijkeRoute.addStep(new PietersenTransport(), deel1Auto);
             tijdelijkeRoute.addStep(new TreinKoerier(), deel2);
             tijdelijkeRoute.addStep(new PietersenTransport(), deel3Auto);
-            if(tijdelijkeRoute.getSteps().size() > 0)
+            if(tijdelijkeRoute.getSteps().size() > 0 && tijdelijkeRoute.getTijd() < Config.MAX_REISTIJD)
                 mogelijkheden.add(tijdelijkeRoute);
             tijdelijkeRoute = new Route();
             tijdelijkeRoute.addStep(new PietersenTransport(), deel1Auto);
             tijdelijkeRoute.addStep(new TreinKoerier(), deel2);
             tijdelijkeRoute.addStep(new BodeKoerier(), deel3Auto);
-            if(tijdelijkeRoute.getSteps().size() > 0)
+            if(tijdelijkeRoute.getSteps().size() > 0 && tijdelijkeRoute.getTijd() < Config.MAX_REISTIJD)
                 mogelijkheden.add(tijdelijkeRoute);
 
             //Auto Trein Fiets
@@ -98,13 +100,13 @@ public class RouteCalculator {
                 tijdelijkeRoute.addStep(new BodeKoerier(), deel1Auto);
                 tijdelijkeRoute.addStep(new TreinKoerier(), deel2);
                 tijdelijkeRoute.addStep(new FietsKoerier(), deel3Fiets);
-                if(tijdelijkeRoute.getSteps().size() > 0)
+                if(tijdelijkeRoute.getSteps().size() > 0 && tijdelijkeRoute.getTijd() < Config.MAX_REISTIJD)
                     mogelijkheden.add(tijdelijkeRoute);
                 tijdelijkeRoute = new Route();
                 tijdelijkeRoute.addStep(new PietersenTransport(), deel1Auto);
                 tijdelijkeRoute.addStep(new TreinKoerier(), deel2);
                 tijdelijkeRoute.addStep(new FietsKoerier(), deel3Fiets);
-                if(tijdelijkeRoute.getSteps().size() > 0)
+                if(tijdelijkeRoute.getSteps().size() > 0 && tijdelijkeRoute.getTijd() < Config.MAX_REISTIJD)
                     mogelijkheden.add(tijdelijkeRoute);
             }
         }
@@ -113,11 +115,11 @@ public class RouteCalculator {
         String fullCarRes = HttpRequest.getGoogleMatrix(origin, destination, 1);
         tijdelijkeRoute = new Route();
         tijdelijkeRoute.addStep(new BodeKoerier(), fullCarRes);
-        if(tijdelijkeRoute.getSteps().size() > 0)
+        if(tijdelijkeRoute.getSteps().size() > 0 && tijdelijkeRoute.getTijd() < Config.MAX_REISTIJD)
             mogelijkheden.add(tijdelijkeRoute);
         tijdelijkeRoute = new Route();
         tijdelijkeRoute.addStep(new PietersenTransport(), fullCarRes);
-        if(tijdelijkeRoute.getSteps().size() > 0)
+        if(tijdelijkeRoute.getSteps().size() > 0 && tijdelijkeRoute.getTijd() < Config.MAX_REISTIJD)
             mogelijkheden.add(tijdelijkeRoute);
 
         Collections.sort(mogelijkheden);

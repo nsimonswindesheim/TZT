@@ -1,5 +1,6 @@
 package schermen;
 
+import general.Validate;
 import klant.Klant;
 import klant.KlantDAODerby;
 import locatie.Locatie;
@@ -195,17 +196,37 @@ public class OverzichtBestaandeKlant extends JFrame implements ActionListener {
 
     public void actionPerformed(ActionEvent ae) {
         if(ae.getSource() == klantUpdaten) {
-            klant.setVoornaam(voornaamInvoer.getText());
-            klant.setAchternaam(achternaamInvoer.getText());
-            klant.setEmail(emailInvoer.getText());
-            klant.setTelefoonnummer(telInvoer.getText());
-            Locatie locatie = new LocatieDAODerby().newLocatie(straatInvoer.getText(), huisnummerInvoer.getText(), postcodeInvoer.getText(), plaatsInvoer.getText());
-            klant.setLocatie(locatie);
-            if(new KlantDAODerby().saveToDB(klant) != 0) {
-                System.out.println("---: Klant updated");
-                JOptionPane.showMessageDialog(null,"De klant is succesvol bijgewerkt!", "Succes", JOptionPane.INFORMATION_MESSAGE);
+            String[][] arrays = {
+                    {"voornaam", voornaamInvoer.getText(), "min:2,max:100"},
+                    {"achternaam", achternaamInvoer.getText(), "required,min:2,max:100"},
+                    {"email", emailInvoer.getText(), "required,email,max:256"},
+                    {"telefoonnummer", telInvoer.getText(), "required,min:6,max:15"},
+                    {"straat", straatInvoer.getText(), "required,min:3,max:100"},
+                    {"huisnummer", huisnummerInvoer.getText(), "required,min:1,max:6"},
+                    {"postcode", postcodeInvoer.getText(), "required,min:6,max:6"},
+                    {"plaats", plaatsInvoer.getText(), "required,min:3,max:35"},
+            };
+
+            ArrayList<String> errors = Validate.multiple(arrays);
+            if(errors.size() > 0) {
+                String errorString = "";
+                for (String error:errors) {
+                    errorString += "- " + error + "\n";
+                }
+                JOptionPane.showMessageDialog(null,errorString, "Oeps..", JOptionPane.ERROR_MESSAGE);
             } else {
-                JOptionPane.showMessageDialog(null,"Er is iets mis gegaan tijdens het opslaan van de klant, probeer het later nog eens!", "Oeps..", JOptionPane.ERROR_MESSAGE);
+                klant.setVoornaam(voornaamInvoer.getText());
+                klant.setAchternaam(achternaamInvoer.getText());
+                klant.setEmail(emailInvoer.getText());
+                klant.setTelefoonnummer(telInvoer.getText());
+                Locatie locatie = new LocatieDAODerby().newLocatie(straatInvoer.getText(), huisnummerInvoer.getText(), postcodeInvoer.getText(), plaatsInvoer.getText());
+                klant.setLocatie(locatie);
+                if (new KlantDAODerby().saveToDB(klant) != 0) {
+                    System.out.println("---: Klant updated");
+                    JOptionPane.showMessageDialog(null, "De klant is succesvol bijgewerkt!", "Succes", JOptionPane.INFORMATION_MESSAGE);
+                } else {
+                    JOptionPane.showMessageDialog(null, "Er is iets mis gegaan tijdens het opslaan van de klant, probeer het later nog eens!", "Oeps..", JOptionPane.ERROR_MESSAGE);
+                }
             }
         } else if(ae.getSource() == nieuwRoute) {
             JTextField straat = new JTextField();

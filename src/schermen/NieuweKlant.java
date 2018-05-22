@@ -1,10 +1,12 @@
 package schermen;
 
+import general.Validate;
 import klant.Klant;
 import klant.KlantDAODerby;
 
 import java.awt.*;
 import java.awt.event.*;
+import java.util.ArrayList;
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 
@@ -136,14 +138,34 @@ public class NieuweKlant extends JFrame implements ActionListener{
 
     public void actionPerformed(ActionEvent ae) {
         if(ae.getSource() == klantToevoegen) {
-            Klant k = new Klant(voornaamInvoer.getText(), achternaamInvoer.getText(), emailInvoer.getText(), telInvoer.getText(), straatInvoer.getText(), huisnummerInvoer.getText(), postcodeInvoer.getText(), plaatsInvoer.getText());
-            int sk = new KlantDAODerby().saveToDB(k);
-            if(sk != 0) {
-                k.setKlantID(sk);
-                new OverzichtBestaandeKlant(k, hoofdScherm, sk);
-                mainFrame.dispose();
+            String[][] arrays = {
+                    {"voornaam", voornaamInvoer.getText(), "min:2,max:100"},
+                    {"achternaam", achternaamInvoer.getText(), "required,min:2,max:100"},
+                    {"email", emailInvoer.getText(), "required,email,max:256"},
+                    {"telefoonnummer", telInvoer.getText(), "required,min:6,max:15"},
+                    {"straat", straatInvoer.getText(), "required,min:3,max:100"},
+                    {"huisnummer", huisnummerInvoer.getText(), "required,min:1,max:6"},
+                    {"postcode", postcodeInvoer.getText(), "required,min:6,max:6"},
+                    {"plaats", plaatsInvoer.getText(), "required,min:3,max:35"},
+            };
+
+            ArrayList<String> errors = Validate.multiple(arrays);
+            if(errors.size() > 0) {
+                String errorString = "";
+                for (String error:errors) {
+                    errorString += "- " + error + "\n";
+                }
+                JOptionPane.showMessageDialog(null,errorString, "Oeps..", JOptionPane.ERROR_MESSAGE);
             } else {
-                JOptionPane.showMessageDialog(null,"Opslaan van klant mislukt, probeer het later nog eens!", "Oeps..", JOptionPane.ERROR_MESSAGE);
+                Klant k = new Klant(voornaamInvoer.getText(), achternaamInvoer.getText(), emailInvoer.getText(), telInvoer.getText(), straatInvoer.getText(), huisnummerInvoer.getText(), postcodeInvoer.getText(), plaatsInvoer.getText());
+                int sk = new KlantDAODerby().saveToDB(k);
+                if(sk != 0) {
+                    k.setKlantID(sk);
+                    new OverzichtBestaandeKlant(k, hoofdScherm, sk);
+                    mainFrame.dispose();
+                } else {
+                    JOptionPane.showMessageDialog(null,"Opslaan van klant mislukt, probeer het later nog eens!", "Oeps..", JOptionPane.ERROR_MESSAGE);
+                }
             }
         }
     }
